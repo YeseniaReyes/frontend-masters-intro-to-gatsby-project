@@ -1,0 +1,35 @@
+/* 
+since we are used css modules
+we won't have problems with classes 
+name being repeated
+but if we import two modules with
+similar selector
+there can be collisions
+
+*/
+
+.header{
+    background: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding: irem;
+}
+
+.header a{
+    color: inherit;
+    display: inline-block;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.header a:focus,
+.header a:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+.content {
+    margin: 1rem auto;
+    max-width: 54ch;    
+}
